@@ -9,10 +9,10 @@ let statistics = {
 
 
 for(const statistic in statistics){
-    if(statistics[statistic] % 2 == 1){
+    
+    if(statistic[0] == 'r'){
         console.log(statistics[statistic]);
-    }
-    else if(statistic[0] == 'r'){
+    }else if(statistics[statistic] % 2 == 1){
         console.log(statistics[statistic]);
     }
 }
